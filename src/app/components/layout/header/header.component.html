@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-lg navbar-light border-fancy shadow" 
+[ngClass]="{'green':headerColor == 'green','yellow':headerColor == 'yellow','turquoise':headerColor == 'turquoise','orange':headerColor == 'orange','default':headerColor == 'default'}" >
+    <div class="container-fluid">
+    <a class="navbar-brand "
+        routerLink="/home">
+        <div class="row">
+                <img class="img-fluid"
+                width="100"
+                height="100"
+                src="assets/logo.png"
+                alt="Grofers" />  
+                <h2 class="text-center mt-3">Grofers</h2>
+        </div>
+                  
+        </a> 
+        <app-search (searched)="search($event)"></app-search>
+   
+    </div>
+</nav>

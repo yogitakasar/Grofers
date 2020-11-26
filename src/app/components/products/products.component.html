@@ -1,0 +1,20 @@
+<div class="main-wrapper">
+               
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                  <nav class="breadcrumb mt-3"
+                       aria-label="breadcrumb">
+                    <a class="breadcrumb-item link-text"
+                       [routerLink]="['/home']">Home</a>
+                    <span class="breadcrumb-item">{{ type }}</span>
+                  </nav>
+                </div>
+              </div>
+            <div class='row'>
+                    <div class="col-sm-4" *ngFor='let product of products'>
+                           <app-product-card [product]="product"></app-product-card> 
+                    </div>   
+            </div>
+        </div>
+        </div>

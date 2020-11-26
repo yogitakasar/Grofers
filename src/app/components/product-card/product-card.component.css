@@ -1,0 +1,19 @@
+.box{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 10px 20px 20px;
+    background: #fff;
+    box-shadow: 0 10px 29px 0 rgba(68,88,144,.1);
+}
+
+.card-header
+{
+    background: 0 0;
+    border: none;
+}
+
+.img-fluid{
+    height: 300px;
+    width: fit-content;
+}
